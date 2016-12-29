@@ -1,0 +1,23 @@
+@font-face {
+    font-family: 'Effra';
+    src: url('vendors/fonts/Effra_Std_He.woff') format('woff'),
+    url('vendors/fonts/Effra_Std_He.svg') format('svg');
+}
+@font-face {
+    font-family: 'ITC';
+    src: url('vendors/fonts/itc-avant-garde-gothic-std-book-condensed-5864f68c397c8.woff') format('woff'),
+    url('vendors/fonts/itc-avant-garde-gothic-std-book-condensed-5864f68c397c8.svg') format('svg');
+}
+@font-face {
+    font-family: 'Source';
+    src: url('vendors/fonts/SourceSansPro-Regular.woff') format('woff'),
+    url('vendors/fonts/SourceSansPro-Regular.svg') format('svg');
+}
+@font-face {
+    font-family: 'Knockout';
+    src: url('vendors/fonts/ufonts.com_knockout-htf47-bantamweight.woff') format('woff'),
+    url('vendors/fonts/ufonts.com_knockout-htf47-bantamweight.svg') format('svg');
+}
+body{
+    background-color: #001b27;
+}
