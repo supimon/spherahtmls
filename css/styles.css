@@ -21,3 +21,35 @@
 body{
     background-color: #001b27;
 }
+/* - - - - - - - - - - - - - - - - - - - - - - - - - contact - - - - - - - - - - - - - - - - - - - - */
+
+
+/* - - - - - - - - - - - - - - - - - - - - - - - - - footer - - - - - - - - - - - - - - - - - - - - */
+footer .container{
+    padding: 20px 0px;
+}
+.footer-logos, .social-share{
+    text-align: center;
+}
+.footer-logos img{
+    width: 94px;
+    padding: 0px 8px 20px;
+}
+.social-share img{
+    padding: 0px 4px;
+}
+@media(min-width: 768px) {
+    .footer-logos{
+        float: left;
+    }
+    .social-share{
+        float: right;
+        position: relative;
+        top: 50%;
+        transform: translateY(100%);
+    }
+    .footer-logos img{
+        width: auto;
+        padding-bottom: 0px;
+    }
+}

@@ -150,26 +150,33 @@
         </div>
     </section>
     <section class="contact">
-        <div class="banner-div">
-            <div class="video"></div>
+        <div class="container">
+            <div class="banner-div">
+                <div class="video"></div>
+            </div>
+            <form id="contactForm">
+                <h2>Contact us</h2>
+                <input type="text" id="inputName" placeholder="Name" required>
+                <input type="email" id="inputEmail" placeholder="Email" required>
+                <input type="tel" id="inputPhone" placeholder="Telephone" required>
+                <input type="text" id="inputHelp" placeholder="How can we help">
+                <button type="submit" id="submitBtn">Submit<span class="arrow"></span></button>
+            </form>
         </div>
-        <form id="contactForm">
-            <h2>Contact us</h2>
-            <input type="text" id="inputName" placeholder="Name" required>
-            <input type="email" id="inputEmail" placeholder="Email" required>
-            <input type="tel" id="inputPhone" placeholder="Telephone" required>
-            <input type="text" id="inputHelp" placeholder="How can we help">
-            <button type="submit" id="submitBtn">Submit<span class="arrow"></span></button>
-        </form>
     </section>
     <footer>
-        <img src="" alt="Sphera Logo">
-        <img src="" alt="CinemaNext Logo">
-        <img src="" alt="Eclair Logo">
-
-        <img src="" alt="fb Logo">
-        <img src="" alt="instagram Logo">
-        <img src="" alt="twitter Logo">
+        <div class="container">
+            <div class="footer-logos">
+                <a href="#"><img src="assets/sphera-footer-logo.png" alt="Sphera Logo"></a>
+                <a href="#"><img src="assets/cinema-footer-logo.png" alt="CinemaNext Logo"></a>
+                <a href="#"><img src="assets/eclair-footer-logo.png" alt="Eclair Logo"></a>
+            </div>
+            <div class="social-share">
+                <a href="#"><img src="assets/fb-icon.png" alt="fb Logo"></a>
+                <a href="#"><img src="assets/instagram-icon.png" alt="instagram Logo"></a>
+                <a href="#"><img src="assets/twitter-icon.png" alt="twitter Logo"></a>
+            </div>
+        </div>
     </footer>
     <script src="js/vendors/jquery/jquery-3.1.1.min.js"></script>
     <script src="js/scripts.js"></script>
