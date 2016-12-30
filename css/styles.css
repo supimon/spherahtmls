@@ -18,18 +18,131 @@
     src: url('vendors/fonts/ufonts.com_knockout-htf47-bantamweight.woff') format('woff'),
     url('vendors/fonts/ufonts.com_knockout-htf47-bantamweight.svg') format('svg');
 }
+/* - - - - - - - - - - - - - - - - - - - - - - - - - general - - - - - - - - - - - - - - - - - - - - */
 body{
     background-color: #001b27;
 }
+input, textarea{
+    background: transparent;
+    border: none;
+    color: #e93131;
+    border-bottom: 2px solid rgba(255, 255, 255, .8);
+    margin-bottom: 35px;
+    text-transform: uppercase;
+    font-family: 'ITC';
+    display: block;
+    font-size: 16px;
+    width: 95%;
+    max-width: 498px;
+    letter-spacing: 0.8px;
+}
+textarea{
+    height: 26px;
+}
+input:focus, textarea:focus{
+    outline: none;
+}
+input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
+    color: #e93131 !important;
+}
+input::-moz-placeholder, textarea::-moz-placeholder {
+    color: #e93131 !important;
+}
+input:-ms-input-placeholder, textarea:-ms-input-placeholder {
+    color: #e93131 !important;
+}
+button{
+    letter-spacing: 0.8px;
+}
+.container{
+    padding: 0px 10px;
+}
+@media(min-width: 768px) {
+    .container{
+        padding: 0px 15px;
+    }
+}
 /* - - - - - - - - - - - - - - - - - - - - - - - - - contact - - - - - - - - - - - - - - - - - - - - */
-
-
+.contact .container{
+    position: relative;
+}
+#contactForm{
+    top: 0px;
+    position: absolute;
+    height: 100%;
+    width: calc(100% - 30px);
+    padding-left: 25px;
+}
+#contactForm h2{
+    color: #e93131;
+    text-transform: uppercase;
+    font-family: 'Effra';
+    letter-spacing: 1.5px;
+    font-size: 24px;
+    margin-bottom: 50px;
+    line-height: 35px;
+}
+#contactForm .submit-holder{
+    width: 95%;
+    max-width: 498px;
+}
+#contactForm button{
+    color: #e93131;
+    text-transform: uppercase;
+    float: right;
+    padding-right: 0px;
+    background: transparent;
+    border: none;
+}
+#contactForm button img{
+    width: 22px;
+    margin-left: 6px;
+}
+.contact .video{
+    background: url('../assets/contact-bg.jpg') no-repeat 10% 0;
+    height: 619px;
+    background-size: cover;
+}
+@media(min-width: 768px) {
+    #contactForm{
+        background-color: rgba(8, 29, 40, 0.25);
+    }
+    .contact .video{
+        height: 637px;
+        background-position: 0%;
+    }
+}
+@media(min-width: 992px) {
+    #contactForm{
+        padding-left: 137px;
+        padding-top: 80px;
+    }
+    #contactForm h2{
+        letter-spacing: 1.6px;
+        font-size: 28px;
+        margin-bottom: 44px;
+        line-height: 40px;
+    }
+}
+@media(min-width: 1200px) {
+    #contactForm{
+        padding-left: 157px;
+        padding-top: 100px;
+    }
+    #contactForm h2{
+        letter-spacing: 2px;
+        font-size: 30px;
+        margin-bottom: 50px;
+        line-height: 43px;
+    }
+}
 /* - - - - - - - - - - - - - - - - - - - - - - - - - footer - - - - - - - - - - - - - - - - - - - - */
 footer .container{
     padding: 20px 0px;
 }
 .footer-logos, .social-share{
     text-align: center;
+    padding: 0px 15px;
 }
 .footer-logos img{
     width: 94px;
@@ -39,6 +152,9 @@ footer .container{
     padding: 0px 4px;
 }
 @media(min-width: 768px) {
+    footer .container{
+        padding: 30px 0px;
+    }
     .footer-logos{
         float: left;
     }
@@ -46,7 +162,7 @@ footer .container{
         float: right;
         position: relative;
         top: 50%;
-        transform: translateY(100%);
+        transform: translateY(85%);
     }
     .footer-logos img{
         width: auto;
