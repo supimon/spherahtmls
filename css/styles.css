@@ -67,13 +67,111 @@ button{
         padding: 0px 15px;
     }
 }
+/* - - - - - - - - - - - - - - - - - - - - - - - - - what is - - - - - - - - - - - - - - - - - - - - */
+.what-is .banner-div{
+    position: relative;
+    margin-top: 10px;
+}
+.what-is hr{
+    -webkit-transform: rotate(-90deg);
+    -moz-transform: rotate(-90deg);
+    -ms-transform: rotate(-90deg);
+    -o-transform: rotate(-90deg);
+    transform: rotate(-90deg);
+    margin: 0px 5px;
+}
+.navigator{
+    display: inline-block;
+    width: 20px;
+    position: fixed;
+    right: 7%;
+    top: 45%;
+    opacity: 0.8;
+    text-align: center;
+    z-index: 2;
+}
+.what-is .logo{
+    padding: 16px 15px;
+}
+.what-is .email-us{
+    margin-top: 31px;
+}
+.what-is .circle{
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-radius: 10px;
+    border: 1px solid white;
+}
+header{
+    position: absolute;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+}
+.sphera-logo{
+
+}
+.email-us{
+    float: right;
+}
+.sound-legal{
+    text-align: center;
+    position: absolute;
+    width: 100%;
+    bottom: 0px;
+    color: #fff;
+    text-transform: uppercase;
+    font-family: 'Knockout';
+    letter-spacing: 2px;
+    font-size: 23px;
+    padding: 0px 15px 0px;
+}
+.sound-legal p{
+    margin: 0px;
+}
+.sound-legal .sound{
+    position: relative;
+    float: left;
+}
+.sound .strike-through{
+    width: 100%;
+    display: inline-block;
+    position: absolute;
+    left: 0px;
+    height: 25%;
+    border-bottom: 1px solid #e93131;
+}
+.sound-legal .arrow{
+    display: inline-block;
+}
+.sound-legal .legal{
+    float: right;
+}
+@media(min-width: 768px) {
+    .what-is .logo{
+        padding: 28px 35px;
+    }
+    .what-is .email-us{
+        margin-top: 33px;
+    }
+    .sound-legal{
+        padding: 0px 35px 15px;
+    }
+}
+@media(min-width: 992px) {
+
+}
+@media(min-width: 1200px) {
+
+}
 /* - - - - - - - - - - - - - - - - - - - - - - - - - about and experience - - - - - - - - - - - - - - - - - - - - */
-.about .video, .experience .video{
+.about .video, .experience .video, .what-is .video{
     background: url('../assets/contact-bg.jpg') no-repeat 10% 0;
     height: 619px;
     background-size: cover;
 }
-.about h2, .experience h2{
+.about h2, .experience h2, .what-is h1{
     color: #e93131;
     text-transform: uppercase;
     font-family: 'Knockout';
@@ -86,7 +184,7 @@ button{
     margin-bottom: 40px;
     margin-top: 200px;
 }
-.about p, .experience p{
+.about p, .experience p, .what-is .intro-p{
     font-family: 'ITC';
     color: white;
     width: 75%;
@@ -96,11 +194,11 @@ button{
     margin-bottom: 232px;
 }
 @media(min-width: 768px) {
-    .about .video, .experience .video{
+    .about .video, .experience .video, .what-is .video{
         height: 637px;
         background-position: 0%;
     }
-    .about p, .experience p {
+    .about p, .experience p, .what-is .intro-p {
         width: 535px;
         line-height: 32px;
     }

@@ -11,11 +11,39 @@
     <section class="what-is">
         <div class="container">
             <div class="banner-div">
-                <div class="video"></div>
+                <div class="video">
+                    <svg viewBox="0 0 200 100" width="100%" height="100%">
+                        <style>
+                            .title-text {
+                                font-family: 'DIN';
+                                font-size: 30px;
+                                text-transform: uppercase;
+                                letter-spacing: 0px;
+                                fill: rgba(255, 255, 255, 0.6);
+                                text-anchor: middle;
+                            }
+                            .title-text.text2{
+                                transform: translate(0px, 15px);
+                            }
+
+                            @media (min-width: 768px) {
+                                .title-text {
+                                    font-size: 19px;
+                                    letter-spacing: -0.5px;
+                                }
+                                .title-text.text2{
+                                    transform: none;
+                                }
+                            }
+                        </style>
+                        <text class="title-text" x="50%" y="45%">There is a whole</text>
+                        <text class="title-text text2" x="50%" y="65%">world in here</text>
+                    </svg>
+                </div>
                 <header>
                     <div class="logo">
-                        <img src="" alt="Sphera Logo">
-                        <img src="" alt="email us">
+                        <img class="sphera-logo" src="assets/main-logo.png" alt="Sphera Logo">
+                        <img class="email-us" src="assets/mail-icon.png" alt="email us">
                     </div>
                     <div class="navigator">
                         <div class="circle"></div>
@@ -29,15 +57,15 @@
                         <div class="circle"></div>
                     </div>
                     <div class="sound-legal">
-                        <p>Sound</p>
-                        <div class="arrow"></div>
-                        <p>Legal</p>
+                        <p class="sound">Sound<span class="strike-through"></span></p>
+                        <img class="arrow" src="assets/arrow-down.png">
+                        <p class="legal">Legal</p>
                     </div>
                 </header>
             </div>
             <div class="text-div text-center">
-                <h1>What is Sphera</h1>
-                <p>We open up new world for audiences through the ultimate in a flexible, premium
+                <h1>What is Sphera</h1><br/>
+                <p class="intro-p">We open up new world for audiences through the ultimate in a flexible, premium
                 cinema experience. Our technicians, designers and colorists have obsessed over
                 every detail to set a new benchmark in Premium Format</p>
                 <ul class="list-inline">
