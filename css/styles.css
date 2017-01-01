@@ -18,6 +18,11 @@
     src: url('vendors/fonts/ufonts.com_knockout-htf47-bantamweight.woff') format('woff'),
     url('vendors/fonts/ufonts.com_knockout-htf47-bantamweight.svg') format('svg');
 }
+@font-face {
+    font-family: 'DIN';
+    src: url('vendors/fonts/dincond-bold-opentype.woff') format('woff'),
+    url('vendors/fonts/dincond-bold-opentype.svg') format('svg');
+}
 /* - - - - - - - - - - - - - - - - - - - - - - - - - general - - - - - - - - - - - - - - - - - - - - */
 body{
     background-color: #001b27;
@@ -61,6 +66,50 @@ button{
     .container{
         padding: 0px 15px;
     }
+}
+/* - - - - - - - - - - - - - - - - - - - - - - - - - about and experience - - - - - - - - - - - - - - - - - - - - */
+.about .video, .experience .video{
+    background: url('../assets/contact-bg.jpg') no-repeat 10% 0;
+    height: 619px;
+    background-size: cover;
+}
+.about h2, .experience h2{
+    color: #e93131;
+    text-transform: uppercase;
+    font-family: 'Knockout';
+    letter-spacing: 1.5px;
+    font-size: 23px;
+    display: inline-block;
+    border-bottom: 1px solid;
+    line-height: 11px;
+    padding: 0px 2px;
+    margin-bottom: 40px;
+    margin-top: 200px;
+}
+.about p, .experience p{
+    font-family: 'ITC';
+    color: white;
+    width: 75%;
+    display: inline-block;
+    font-size: 17px;
+    line-height: 28px;
+    margin-bottom: 232px;
+}
+@media(min-width: 768px) {
+    .about .video, .experience .video{
+        height: 637px;
+        background-position: 0%;
+    }
+    .about p, .experience p {
+        width: 535px;
+        line-height: 32px;
+    }
+}
+@media(min-width: 992px) {
+
+}
+@media(min-width: 1200px) {
+
 }
 /* - - - - - - - - - - - - - - - - - - - - - - - - - contact - - - - - - - - - - - - - - - - - - - - */
 .contact .container{
