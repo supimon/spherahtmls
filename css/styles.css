@@ -148,6 +148,23 @@ header{
 .sound-legal .legal{
     float: right;
 }
+.what-is .text-div .intro-p{
+    margin-bottom: 92px;
+}
+.text-div ul{
+    color: #fff;
+    text-transform: uppercase;
+    font-family: 'Knockout';
+    letter-spacing: 2px;
+    font-size: 23px;
+    margin-bottom: 120px;
+}
+.text-div ul li{
+    padding: 0px 70px;
+}
+.text-div li img{
+    margin-bottom: 28px;
+}
 @media(min-width: 768px) {
     .what-is .logo{
         padding: 28px 35px;
@@ -158,9 +175,20 @@ header{
     .sound-legal{
         padding: 0px 35px 15px;
     }
+    .text-div ul li {
+        padding: 0px 37px;
+    }
+    .text-div li img{
+        width: 57px;
+    }
 }
 @media(min-width: 992px) {
-
+    .text-div ul li {
+        padding: 0px 50px;
+    }
+    .text-div li img{
+        width: auto;
+    }
 }
 @media(min-width: 1200px) {
 
