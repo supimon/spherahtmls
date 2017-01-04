@@ -173,6 +173,9 @@ header{
     .what-is .video{
         background-position: 0%;
     }
+    header{
+        height: 637px;
+    }
     .what-is .logo{
         padding: 28px 35px;
     }
@@ -361,6 +364,7 @@ header{
 @media(min-width: 768px) {
     #contactForm{
         background-color: rgba(8, 29, 40, 0.25);
+        height: 637px;
     }
     .contact .banner-div{
         background-position: 0%;
