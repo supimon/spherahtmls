@@ -193,6 +193,83 @@ header{
 @media(min-width: 1200px) {
 
 }
+/* - - - - - - - - - - - - - - - - - - - - - - - - - technical - - - - - - - - - - - - - - - - - - - - */
+.technical h2{
+    color: #e93131;
+    text-transform: uppercase;
+    font-family: 'Effra';
+    letter-spacing: 2px;
+    font-size: 30px;
+    padding-left: 157px;
+    line-height: 43px;
+    margin-bottom: -42px;
+}
+.technical .slider-holder{
+    background-color: white;
+    padding-top: 122px;
+    padding-left: 100px;
+}
+.slider-holder .slides{
+    margin-bottom: 0px;
+}
+.slider-holder .slides li{
+    padding-right: 130px;
+    margin-bottom: 60px;
+}
+.slider-holder .slides img{
+    float: left;
+    width: 440px;
+    margin-right: 70px;
+}
+.slider-holder .slides h3{
+    color: #e93131;
+    text-transform: uppercase;
+    font-family: 'Knockout';
+    letter-spacing: 2px;
+    font-size: 23px;
+    border-bottom: 2px solid #e93131;
+    display: inline-block;
+    line-height: 12px;
+    padding-left: 2px;
+    margin-top: 67px;
+    margin-bottom: 30px;
+}
+.slider-holder .subtitle{
+    font-family: 'ITC';
+    font-size: 17px;
+    letter-spacing: -0.3px;
+    line-height: 27px;
+    margin-bottom: 20px;
+}
+.slider-holder .description{
+    font-family: 'Source';
+    line-height: 26px;
+    letter-spacing: -0.3px;
+    font-size: 13px;
+}
+.slider-holder .slide-indicator{
+    padding-bottom: 60px;
+    margin-bottom: 0px;
+}
+.slider-holder .slide-indicator hr{
+    width: 105px;
+    border-color: #e93131;
+    border-width: 2px;
+    margin: 0px 7px 7px;
+}
+.slider-holder .slide-indicator li{
+    color: #8e8e8e;
+    text-transform: uppercase;
+    font-family: 'Knockout';
+    letter-spacing: 2px;
+    font-size: 23px;
+    line-height: 12px;
+    padding: 0px 0px 0px 2px;
+}
+.slider-holder .slide-indicator li.active{
+    color: #e93131;
+    border-bottom: 2px solid #e93131;
+}
 /* - - - - - - - - - - - - - - - - - - - - - - - - - about and experience - - - - - - - - - - - - - - - - - - - - */
 .about .video, .experience .video, .what-is .video{
     background: url('../assets/contact-bg.jpg') no-repeat 10% 0;
@@ -242,11 +319,10 @@ header{
     position: relative;
 }
 #contactForm{
-    top: 0px;
-    position: absolute;
-    height: 100%;
-    width: calc(100% - 30px);
+    height: 619px;
+    width: 100%;
     padding-left: 25px;
+    position: relative;
 }
 #contactForm h2{
     color: #e93131;
@@ -273,17 +349,19 @@ header{
     width: 22px;
     margin-left: 6px;
 }
-.contact .video{
+.contact .banner-div{
     background: url('../assets/contact-bg.jpg') no-repeat 10% 0;
-    height: 619px;
+    height: 100%;
     background-size: cover;
+    position: absolute;
+    top: 0px;
+    width: calc(100% - 30px);
 }
 @media(min-width: 768px) {
     #contactForm{
         background-color: rgba(8, 29, 40, 0.25);
     }
-    .contact .video{
-        height: 637px;
+    .contact .banner-div{
         background-position: 0%;
     }
 }
