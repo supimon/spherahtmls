@@ -204,32 +204,42 @@ header{
 
 }
 /* - - - - - - - - - - - - - - - - - - - - - - - - - technical - - - - - - - - - - - - - - - - - - - - */
-.technical h2{
+.technical h2 {
     color: #e93131;
     text-transform: uppercase;
     font-family: 'Effra';
     letter-spacing: 2px;
-    font-size: 30px;
-    padding-left: 157px;
-    line-height: 43px;
-    margin-bottom: -42px;
+    font-size: 24px;
+    padding-left: 25px;
+    line-height: 36px;
+    margin-bottom: -37px;
 }
 .technical .slider-holder{
     background-color: white;
-    padding-top: 122px;
-    padding-left: 100px;
+    padding-top: 84px;
+    padding-left: 0px;
+    text-align: center;
 }
 .slider-holder .slides{
     margin-bottom: 0px;
+    margin-left: 0px;
 }
 .slider-holder .slides li{
-    padding-right: 130px;
+    padding-right: 0px;
+    padding-left: 0px;
     margin-bottom: 60px;
 }
 .slider-holder .slides img{
     float: left;
-    width: 440px;
-    margin-right: 70px;
+    width: 100%;
+}
+.slider-holder .slides .text-holder{
+    text-align: center;
+    display: block;
+    padding: 0px 34px;
+}
+.slider-holder .slides h3 {
+    text-align: center;
 }
 .slider-holder .slides h3{
     color: #e93131;
@@ -237,12 +247,19 @@ header{
     font-family: 'Knockout';
     letter-spacing: 2px;
     font-size: 23px;
-    border-bottom: 2px solid #e93131;
     display: inline-block;
     line-height: 12px;
-    padding-left: 2px;
     margin-top: 67px;
     margin-bottom: 30px;
+}
+.slider-holder .slides h3 .underline{
+    border-bottom: 2px solid #e93131;
+    padding-left: 2px;
+    display: inline-block;
+}
+.slider-holder .subtitle, .slider-holder .description{
+    max-width: 300px;
+    display: inline-block;
 }
 .slider-holder .subtitle{
     font-family: 'ITC';
@@ -260,12 +277,13 @@ header{
 .slider-holder .slide-indicator{
     padding-bottom: 60px;
     margin-bottom: 0px;
+    margin-left: 0px;
 }
-.slider-holder .slide-indicator hr{
-    width: 105px;
+.slider-holder .slide-indicator hr {
+    width: 30px;
     border-color: #e93131;
     border-width: 2px;
-    margin: 0px 7px 7px;
+    margin: 0px 2px 7px;
 }
 .slider-holder .slide-indicator li{
     color: #8e8e8e;
@@ -279,6 +297,74 @@ header{
 .slider-holder .slide-indicator li.active{
     color: #e93131;
     border-bottom: 2px solid #e93131;
+}
+@media(min-width: 768px) {
+    .slider-holder .slides span{
+
+    }
+}
+@media(min-width: 992px) {
+    .technical h2{
+        font-size: 30px;
+        padding-left: 157px;
+        line-height: 43px;
+        margin-bottom: -42px;
+    }
+    .technical .slider-holder {
+        padding-left: 70px;
+        text-align: left;
+    }
+    .slider-holder .slides li{
+        padding-right: 70px;
+    }
+    .slider-holder .subtitle, .slider-holder .description{
+        max-width: none;
+        display: block;
+    }
+    .slider-holder .slides .text-holder{
+        display: inline-block;
+        float: left;
+        width: 330px;
+        text-align: left;
+        padding: 0px;
+    }
+    .slider-holder .slides img {
+        float: left;
+        width: 390px;
+        margin-right: 50px;
+    }
+    .slider-holder .slides h3{
+        margin-top: 23px;
+    }
+    .slider-holder .slide-indicator hr {
+        width: 80px;
+        margin: 0px 7px 7px;
+    }
+}
+@media(min-width: 1200px) {
+    .technical .slider-holder{
+        padding-top: 122px;
+        padding-left: 100px;
+    }
+    .slider-holder .slides li{
+        padding-right: 130px;
+        padding-left: 0px;
+    }
+    .slider-holder .slides .text-holder{
+        display: inline;
+        float: none;
+        width: auto;
+    }
+    .slider-holder .slides img{
+        width: 440px;
+        margin-right: 70px;
+    }
+    .slider-holder .slides h3{
+        margin-top: 67px;
+    }
+    .slider-holder .slide-indicator hr {
+        width: 105px;
+    }
 }
 /* - - - - - - - - - - - - - - - - - - - - - - - - - about and experience - - - - - - - - - - - - - - - - - - - - */
 .about .banner-div, .experience .banner-div{
