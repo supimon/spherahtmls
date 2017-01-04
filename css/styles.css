@@ -271,7 +271,7 @@ header{
     border-bottom: 2px solid #e93131;
 }
 /* - - - - - - - - - - - - - - - - - - - - - - - - - about and experience - - - - - - - - - - - - - - - - - - - - */
-.about .video, .experience .video, .what-is .video{
+.about .banner-div, .experience .banner-div, .what-is .video{
     background: url('../assets/contact-bg.jpg') no-repeat 10% 0;
     height: 619px;
     background-size: cover;
@@ -299,7 +299,7 @@ header{
     margin-bottom: 232px;
 }
 @media(min-width: 768px) {
-    .about .video, .experience .video, .what-is .video{
+    .about .banner-div, .experience .banner-div, .what-is .video{
         height: 637px;
         background-position: 0%;
     }
