@@ -72,6 +72,19 @@ button{
     position: relative;
     margin-top: 10px;
 }
+.what-is .video{
+    background: url('../assets/contact-bg.jpg') no-repeat 10% 0;
+    height: 100%;
+    background-size: cover;
+    top: 0px;
+    width: 100%;
+    position: absolute;
+}
+header{
+    width: 100%;
+    height: 619px;
+    position: relative;
+}
 .what-is hr{
     -webkit-transform: rotate(-90deg);
     -moz-transform: rotate(-90deg);
@@ -102,15 +115,6 @@ button{
     height: 10px;
     border-radius: 10px;
     border: 1px solid white;
-}
-header{
-    position: absolute;
-    top: 0px;
-    width: 100%;
-    height: 100%;
-}
-.sphera-logo{
-
 }
 .email-us{
     float: right;
@@ -166,6 +170,9 @@ header{
     margin-bottom: 28px;
 }
 @media(min-width: 768px) {
+    .what-is .video{
+        background-position: 0%;
+    }
     .what-is .logo{
         padding: 28px 35px;
     }
@@ -271,7 +278,7 @@ header{
     border-bottom: 2px solid #e93131;
 }
 /* - - - - - - - - - - - - - - - - - - - - - - - - - about and experience - - - - - - - - - - - - - - - - - - - - */
-.about .banner-div, .experience .banner-div, .what-is .video{
+.about .banner-div, .experience .banner-div{
     background: url('../assets/contact-bg.jpg') no-repeat 10% 0;
     height: 619px;
     background-size: cover;
@@ -299,7 +306,7 @@ header{
     margin-bottom: 232px;
 }
 @media(min-width: 768px) {
-    .about .banner-div, .experience .banner-div, .what-is .video{
+    .about .banner-div, .experience .banner-div{
         height: 637px;
         background-position: 0%;
     }
@@ -307,12 +314,6 @@ header{
         width: 535px;
         line-height: 32px;
     }
-}
-@media(min-width: 992px) {
-
-}
-@media(min-width: 1200px) {
-
 }
 /* - - - - - - - - - - - - - - - - - - - - - - - - - contact - - - - - - - - - - - - - - - - - - - - */
 .contact .container{
@@ -355,7 +356,7 @@ header{
     background-size: cover;
     position: absolute;
     top: 0px;
-    width: calc(100% - 30px);
+    width: calc(100% - 20px);
 }
 @media(min-width: 768px) {
     #contactForm{
@@ -363,6 +364,7 @@ header{
     }
     .contact .banner-div{
         background-position: 0%;
+        width: calc(100% - 30px);
     }
 }
 @media(min-width: 992px) {
