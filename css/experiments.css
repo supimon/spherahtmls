@@ -1,0 +1,65 @@
+.what-is .text-div{
+    position: relative;
+    background-color: #001b27;
+}
+.experience{
+    opacity: 0;
+    transform: translateY(50px);
+    transition: all 1s ease-out;
+}
+.experience.fade-in{
+    opacity: 1;
+    transform: translateY(0px);
+}
+.about .banner-h2{
+    overflow: hidden;
+    text-align: center;
+    height: 637px;
+    padding-top: 152px;
+    position: relative;
+}
+.about .banner-h2 h2{
+    font-family: 'DIN';
+    font-size: 123px;
+    text-transform: uppercase;
+    letter-spacing: 0px;
+    color: rgba(255, 255, 255, 0.6);
+    position: relative;
+}
+.about .banner-div{
+    width: 100%;
+    height: 140%;
+    position: absolute;
+    top: 0px;
+    background-size: cover;
+}
+.technical ul{
+    position: relative;
+    overflow: hidden;
+}
+.technical ul li.to-be-slided{
+    position: absolute;
+    top: 0px;
+}
+.technical ul li.slide-2{
+    visibility: hidden;
+    left: 0px;
+}
+.technical ul li.slide-3{
+    visibility: hidden;
+    left: 0px;
+}
+.technical ul li.navigator-text{
+    margin-bottom: 0px;
+}
+.technical ul li.fake-height{
+    display: block;
+    margin-bottom: 0px;
+    height: 300%;
+}
+#spheraFooterLogo{
+    margin-bottom: -36px;
+}
+.footer-logos{
+    padding-bottom: 20px;
+}

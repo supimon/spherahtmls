@@ -16,6 +16,7 @@
 @font-face {
     font-family: 'Knockout';
     src: url('vendors/fonts/ufonts.com_knockout-htf47-bantamweight.woff') format('woff'),
+    url('vendors/fonts/Knockout-HTF47-Bantamweight.otf') format('opentype'),
     url('vendors/fonts/ufonts.com_knockout-htf47-bantamweight.svg') format('svg');
 }
 @font-face {
@@ -67,6 +68,12 @@ button{
         padding: 0px 15px;
     }
 }
+@media(min-width: 1200px) {
+    .container{
+        width: 100%;
+        padding: 0px;
+    }
+}
 /* - - - - - - - - - - - - - - - - - - - - - - - - - what is - - - - - - - - - - - - - - - - - - - - */
 .what-is .banner-div{
     position: relative;
@@ -108,6 +115,7 @@ header{
 }
 .what-is .email-us{
     margin-top: 31px;
+    cursor: pointer;
 }
 .what-is .circle{
     display: inline-block;
@@ -169,6 +177,9 @@ header{
 .text-div li img{
     margin-bottom: 28px;
 }
+.text-div li .sphera-services-svg{
+      margin-bottom: 12px;
+  }
 @media(min-width: 768px) {
     .what-is .video{
         background-position: 0%;
@@ -224,7 +235,7 @@ header{
     margin-bottom: 0px;
     margin-left: 0px;
 }
-.slider-holder .slides li{
+.slider-holder .slides > li{
     padding-right: 0px;
     padding-left: 0px;
     margin-bottom: 60px;
@@ -314,7 +325,7 @@ header{
         padding-left: 70px;
         text-align: left;
     }
-    .slider-holder .slides li{
+    .slider-holder .slides > li{
         padding-right: 70px;
     }
     .slider-holder .subtitle, .slider-holder .description{
@@ -346,7 +357,7 @@ header{
         padding-top: 122px;
         padding-left: 100px;
     }
-    .slider-holder .slides li{
+    .slider-holder .slides > li{
         padding-right: 130px;
         padding-left: 0px;
     }
@@ -372,7 +383,7 @@ header{
     height: 619px;
     background-size: cover;
 }
-.about h2, .experience h2, .what-is h1{
+.about .text-div h2, .experience h2, .what-is h1{
     color: #e93131;
     text-transform: uppercase;
     font-family: 'Knockout';
@@ -479,6 +490,9 @@ header{
         font-size: 30px;
         margin-bottom: 50px;
         line-height: 43px;
+    }
+    .contact .banner-div{
+        width: 100%;
     }
 }
 /* - - - - - - - - - - - - - - - - - - - - - - - - - footer - - - - - - - - - - - - - - - - - - - - */
