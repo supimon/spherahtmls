@@ -166,12 +166,11 @@ $(document).ready(function(){
 
         if($('.width-calc').width() >= 1140){
             $('.width-calc').width() < 1240 ?
-                $('.logo-anim-exp-holder').css({'top': ($('.slider-centraliser').offset().top - 228)}): //438
-            $('.logo-anim-exp-holder').css({'top': ($('.slider-centraliser').offset().top - 270)}); //500
+                $('.logo-anim-exp-holder').css({'top': ($('.slider-centraliser').offset().top - 428)}):
+            $('.logo-anim-exp-holder').css({'top': ($('.slider-centraliser').offset().top - 500)});
             $('.logo-anim-abt-holder').css({'top': ($('.about').offset().top + 465)});
         }else if(currWidth == 'sm' || currWidth == 'md'){
-            currWidth == 'md' ? $('.logo-anim-exp-holder').css({'top': ($('.slider-centraliser').offset().top - 230)}) :
-            $('.logo-anim-exp-holder').css({'top': ($('.slider-centraliser').offset().top - 190)}); //350
+            $('.logo-anim-exp-holder').css({'top': ($('.slider-centraliser').offset().top - 350)});
             $('.logo-anim-abt-holder').css({'top': ($('.about').offset().top + 529)});
         }
     }

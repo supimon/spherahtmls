@@ -5,9 +5,6 @@
     width: 100%;
     top: 0px;
 }
-.logo-anim-holder {
-    z-index: 2;
-}
 
 @media(min-width: 400px) {
 
@@ -62,8 +59,7 @@
         margin-bottom: 157px;
     }
     .logo-anim-exp-holder {
-        /*right: -25%;*/
-        right: -31%;
+        right: -25%;
     }
     .carousel .slides .item{
         text-align: center;
@@ -76,8 +72,7 @@
         max-width: none;
     }
     .logo-anim-abt-holder {
-        /*left: -24%;*/
-        left: -5%;
+        left: -24%;
     }
     .about p{
         margin-bottom: 180px;
@@ -160,12 +155,10 @@
         width: auto;
     }
     .logo-anim-exp-holder {
-        /*right: -17%;*/
-        right: -25%;
+        right: -17%;
     }
     .logo-anim-abt-holder {
-        /*left: -19%;*/
-        left: -7%;
+        left: -19%;
     }
     .experience .text-div h2 {
         margin-top: 193px;
@@ -189,12 +182,10 @@
 }
 @media(min-width: 1440px) {
     .logo-anim-exp-holder {
-        /*right: -16%;*/
-        right: -26%;
+        right: -16%;
     }
     .logo-anim-abt-holder {
-        /*left: -18%;*/
-        left: -5%;
+        left: -18%;
     }
     .experience .text-div h2 {
         margin-top: 195px;
@@ -212,12 +203,10 @@
         font-size: 24px;
     }
     .logo-anim-exp-holder {
-        /*right: -10%;*/
-        right: -19%;
+        right: -10%;
     }
     .logo-anim-abt-holder {
-        /*left: -13%;*/
-        left: -4%;
+        left: -13%;
     }
     .experience .text-div h2 {
         margin-top: 195px;

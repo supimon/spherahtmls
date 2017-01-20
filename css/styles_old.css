@@ -95,7 +95,7 @@ button{
     width: 344px;
     height: 252px;
 }
-#logoAnimSvg2, #logoAnimSvg3, #BLODLeft, #BLODRight {
+#logoAnimSvg2, #logoAnimSvg3 {
     position: relative;
     z-index: 1;
 }
@@ -176,7 +176,7 @@ button{
     .logo-anim-exp-holder{
 
     }
-    #logoAnimSvg, #logoAnimSvg2, #logoAnimSvg3, #BLODLeft, #BLODRight, #BLODRightTop{
+    #logoAnimSvg, #logoAnimSvg2, #logoAnimSvg3{
         width: 544px;
         height: 452px;
     }
@@ -191,7 +191,7 @@ button{
     .logo-anim-exp-holder{
 
     }
-    #logoAnimSvg, #logoAnimSvg2, #logoAnimSvg3, #BLODLeft, #BLODRight, #BLODRightTop{
+    #logoAnimSvg, #logoAnimSvg2, #logoAnimSvg3{
         width: 644px;
         height: 552px;
     }
@@ -208,7 +208,7 @@ button{
         top: 80vh;
         left: -19%;
     }
-    #logoAnimSvg, #logoAnimSvg2, #logoAnimSvg3, #BLODLeft, #BLODRight, #BLODRightTop{
+    #logoAnimSvg, #logoAnimSvg2, #logoAnimSvg3{
         width: 643px;
         height: 551px;
     }
@@ -231,10 +231,9 @@ button{
     }
     .logo-anim-holder {
         top: 80vh;
-        /*left: -18%;*/
-        left: -7%;
+        left: -18%;
     }
-    #logoAnimSvg, #logoAnimSvg2, #logoAnimSvg3, #BLODLeft, #BLODRight, #BLODRightTop{
+    #logoAnimSvg, #logoAnimSvg2, #logoAnimSvg3{
         width: 743px;
         height: 651px;
     }
@@ -251,13 +250,12 @@ button{
 @media(min-width: 1800px) {
     .logo-anim-holder {
         top: calc(100vh - 150px);
-        /*left: -13%;*/
-        left: -5%;
+        left: -13%;
     }
     .width-calc{
         width: 1740px;
     }
-    #logoAnimSvg, #logoAnimSvg2, #logoAnimSvg3, #BLODLeft, #BLODRight, #BLODRightTop{
+    #logoAnimSvg, #logoAnimSvg2, #logoAnimSvg3 {
         width: 743px;
         height: 651px;
     }
