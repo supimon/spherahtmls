@@ -171,12 +171,13 @@ button{
     }
     .logo-anim-holder{
         top: calc(100vh - 100px);
-        left: -24%;
+        /*left: -24%;*/
+        left: -11%;
     }
     .logo-anim-exp-holder{
 
     }
-    #logoAnimSvg, #logoAnimSvg2, #logoAnimSvg3, #BLODLeft, #BLODRight, #BLODRightTop{
+    #logoAnimSvg, #logoAnimSvg2, #logoAnimSvg3, #BLODLeft, #BLODRD, #BLODRT{
         width: 544px;
         height: 452px;
     }
@@ -186,12 +187,13 @@ button{
         width: 940px;
     }
     .logo-anim-holder{
-        left: -17%;
+        /*left: -17%;*/
+        left: -7%;
     }
     .logo-anim-exp-holder{
 
     }
-    #logoAnimSvg, #logoAnimSvg2, #logoAnimSvg3, #BLODLeft, #BLODRight, #BLODRightTop{
+    #logoAnimSvg, #logoAnimSvg2, #logoAnimSvg3, #BLODLeft, #BLODRD, #BLODRT{
         width: 644px;
         height: 552px;
     }
@@ -206,9 +208,10 @@ button{
     }
     .logo-anim-holder {
         top: 80vh;
-        left: -19%;
+        /*left: -19%;*/
+        left: -6%;
     }
-    #logoAnimSvg, #logoAnimSvg2, #logoAnimSvg3, #BLODLeft, #BLODRight, #BLODRightTop{
+    #logoAnimSvg, #logoAnimSvg2, #logoAnimSvg3, #BLODLeft, #BLODRD, #BLODRT{
         width: 643px;
         height: 551px;
     }
@@ -234,7 +237,7 @@ button{
         /*left: -18%;*/
         left: -7%;
     }
-    #logoAnimSvg, #logoAnimSvg2, #logoAnimSvg3, #BLODLeft, #BLODRight, #BLODRightTop{
+    #logoAnimSvg, #logoAnimSvg2, #logoAnimSvg3, #BLODLeft, #BLODRD, #BLODRT{
         width: 743px;
         height: 651px;
     }
@@ -257,7 +260,7 @@ button{
     .width-calc{
         width: 1740px;
     }
-    #logoAnimSvg, #logoAnimSvg2, #logoAnimSvg3, #BLODLeft, #BLODRight, #BLODRightTop{
+    #logoAnimSvg, #logoAnimSvg2, #logoAnimSvg3, #BLODLeft, #BLODRD, #BLODRT{
         width: 743px;
         height: 651px;
     }

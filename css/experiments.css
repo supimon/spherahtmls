@@ -5,7 +5,7 @@
     width: 100%;
     top: 0px;
 }
-.logo-anim-holder {
+.logo-anim-holder, .logo-anim-abt-holder{
     z-index: 2;
 }
 
