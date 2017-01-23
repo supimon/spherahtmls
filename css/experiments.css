@@ -286,3 +286,11 @@ and (orientation : landscape) {
         display: block !important;
     }
 }*/
+/* - - - - correct the position of the right blob - - - - - - - - - - - - - - - - - - */
+.logo-anim-exp-holder{
+    right: 0px !important;
+    overflow: hidden;
+}
+#BLODLeft{
+    transform: translateX(50%);
+}
