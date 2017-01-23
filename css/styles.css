@@ -24,11 +24,12 @@
     url('vendors/fonts/dincond-bold-opentype.svg') format('svg');
 }
 /* - - - - - - - - - - - - - - - - - - - - - - - - - general - - - - - - - - - - - - - - - - - - - - */
+html, body, .body-content-wrapper{
+    overflow-x: hidden;
+    width: 100%;
+}
 body{
     background-color: #001b27;
-}
-.body-content-wrapper{
-    overflow-x: hidden;
 }
 input, textarea{
     background: transparent;
