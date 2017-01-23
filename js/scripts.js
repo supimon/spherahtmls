@@ -4,15 +4,19 @@ $(document).ready(function(){
         $('#thankyouModal').modal('show');
     }
 
-    if($('.video').height() < ($(window).height() - 36)) {
-        $('.video').hide();
-        $('.video').removeClass('video-width-correctn').addClass('video-height-correctn');
-        $('.video').show();
-    }else{
-        $('.video').hide();
-        $('.video').removeClass('video-height-correctn').addClass('video-width-correctn');
-        $('.video').show();
-    }
+    setTimeout(function() {
+        if ($('.video').height() < ($(window).height() - $('.what-is .banner-div').offset().top * 2)) {
+            $('video').css({
+                'width': 'auto',
+                'height': ($(window).height() - $('.what-is .banner-div').offset().top * 2)
+            });
+        } else {
+            $('video').css({
+                'height': 'auto',
+                'width': ($(window).width() - $('.what-is .banner-div').offset().left * 2)
+            });
+        }
+    }, 1000);
     
     var browser = (!!window.opr && !!opr.addons) || !!window.opera || navigator.userAgent.indexOf(' OPR/') >= 0 ?
         'opera' : (typeof InstallTrigger !== 'undefined' ?
@@ -140,17 +144,20 @@ $(document).ready(function(){
                 currWidth = 'xs';
                 break;
         }
-        if($('.video').height() < ($(window).height() - $('.what-is .banner-div').offset().top*2)) {
-            $('video').removeClass('video-width-correctn').addClass('video-height-correctn');
-            setTimeout(function(){
-                $('video').addClass('video-height-correctn');
-            }, 500);
-        }else{
-            $('video').removeClass('video-height-correctn').addClass('video-width-correctn');
-            setTimeout(function(){
-                $('video').addClass('video-width-correctn');
-            }, 500);
-        }
+        setTimeout(function() {
+            if ($('.video').height() < ($(window).height() - $('.what-is .banner-div').offset().top * 2)) {
+                $('video').css({
+                    'width': 'auto',
+                    'height': ($(window).height() - $('.what-is .banner-div').offset().top * 2)
+                });
+            } else {
+                $('video').css({
+                    'height': 'auto',
+                    'width': ($(window).width() - $('.what-is .banner-div').offset().left * 2)
+                });
+            }
+        }, 1000);
+        
         $('.what-is .banner-overlay-text').css({
             'top': $(window).height() / 2 - ($('.what-is .banner-overlay-text').height() / 2
             + $('.what-is .banner-div').offset().top)
@@ -164,14 +171,24 @@ $(document).ready(function(){
                 });
         }, 500);
 
+        /*if($('.width-calc').width() >= 1140){
+            $('.width-calc').width() < 1240 ?
+                $('.logo-anim-exp-holder').css({'top': ($('.slider-centraliser').offset().top - 428)}):
+                $('.logo-anim-exp-holder').css({'top': ($('.slider-centraliser').offset().top - 500)});
+            $('.logo-anim-abt-holder').css({'top': ($('.about').offset().top + 465)});
+        }else if(currWidth == 'sm' || currWidth == 'md'){
+            $('.logo-anim-exp-holder').css({'top': ($('.slider-centraliser').offset().top - 350)});
+            $('.logo-anim-abt-holder').css({'top': ($('.about').offset().top + 529)});
+        }*/
+
         if($('.width-calc').width() >= 1140){
             $('.width-calc').width() < 1240 ?
                 $('.logo-anim-exp-holder').css({'top': ($('.slider-centraliser').offset().top - 228)}): //438
-            $('.logo-anim-exp-holder').css({'top': ($('.slider-centraliser').offset().top - 270)}); //500
+                $('.logo-anim-exp-holder').css({'top': ($('.slider-centraliser').offset().top - 270)}); //500
             $('.logo-anim-abt-holder').css({'top': ($('.about').offset().top + 465)});
         }else if(currWidth == 'sm' || currWidth == 'md'){
             currWidth == 'md' ? $('.logo-anim-exp-holder').css({'top': ($('.slider-centraliser').offset().top - 230)}) :
-            $('.logo-anim-exp-holder').css({'top': ($('.slider-centraliser').offset().top - 190)}); //350
+                $('.logo-anim-exp-holder').css({'top': ($('.slider-centraliser').offset().top - 190)}); //350
             $('.logo-anim-abt-holder').css({'top': ($('.about').offset().top + 529)});
         }
     }
@@ -338,31 +355,6 @@ $(document).ready(function(){
         .addTo(controller);
 
     // ========================================== pin for technical section
-
-    /*var slideScene = new ScrollMagic.Scene({
-        triggerElement: '.technical',
-        triggerHook: 0,
-        duration: $('.technical').height()
-    })
-        .setPin('.technical', {pushFollowers: false})
-        .addTo(controller);
-
-    var slidesTl = new TimelineMax();
-    slidesTl
-        .to('.slide-1', 1, {x: -100, autoAlpha: 0, ease: Power0.easeNone})
-        .to('.slide-2', 1, {autoAlpha: 1, ease: Power0.easeNone}, 1)
-        .to('.slide-2', 1, {x: -100, autoAlpha: 0, ease: Power0.easeNone}, 3)
-        .to('.slide-3', 1, {autoAlpha: 1, ease: Power0.easeNone}, 4)
-    ;
-
-    var slide1Scene = new ScrollMagic.Scene({
-        triggerElement: '.fake-height',
-        duration: '50%'
-    })
-        .setTween(slidesTl)
-        .addTo(controller);*/
-
-
 
      $('#carousel-example-generic').on('slid.bs.carousel', function (e) {
          $('.slide-indicator li').removeClass('active');

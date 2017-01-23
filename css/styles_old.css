@@ -26,6 +26,8 @@
 /* - - - - - - - - - - - - - - - - - - - - - - - - - general - - - - - - - - - - - - - - - - - - - - */
 body{
     background-color: #001b27;
+}
+.body-content-wrapper{
     overflow-x: hidden;
 }
 input, textarea{
