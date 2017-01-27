@@ -21,6 +21,7 @@
 @font-face {
     font-family: 'DIN';
     src: url('vendors/fonts/dincond-bold-opentype.woff') format('woff'),
+    url('vendors/fonts/dincond-bold-opentype.ttf') format('truetype'),
     url('vendors/fonts/dincond-bold-opentype.svg') format('svg');
 }
 /* - - - - - - - - - - - - - - - - - - - - - - - - - general - - - - - - - - - - - - - - - - - - - - */
